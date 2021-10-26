@@ -1,0 +1,16 @@
+server:
+  port: 8991
+spring:
+  application:
+    name: emq-demo
+  # 缓存配置读取
+  cache:
+    type: ehcache
+    ehcache:
+      config: classpath:app1_ehcache.xml
+
+mqtt:
+  broker-url: tcp://192.168.1.111:1883
+  client-id: emq-client
+  username: user
+  password: 123456
